@@ -1,0 +1,323 @@
+
+html {
+    background-image: linear-gradient(darkblue, rgb(41, 222, 242));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.puzzle-title {
+    color: coral;
+    text-align: center;
+}
+
+/* Grid CSS */
+.cell{
+    border: 1px solid black;
+    min-width: 60px;
+    min-height: 60px;
+    display: inline-block;
+    background-color: white;
+    
+}
+
+#container{
+    text-align: center;
+    
+}
+
+.box-clicked {
+    background-color: coral;
+}
+
+.box-crossed {
+    background-image: url("https://web.engr.oregonstate.edu/~beitlerm/images/black_cross.png");
+}
+
+
+.row{
+    line-height: 0;
+}
+
+/* Top number CSS */
+table{
+    /* padding-left: 26.5%; */
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+td{
+    padding-right: 25px;
+    padding-left: 26px;
+    color: white;
+}
+
+/* CSS for the side numbers */
+.side-numbers5x5{
+    position: absolute;
+    top: 225px;
+    right: calc(50% + 170px);
+}
+
+.side-numbers10x10{
+    position: absolute;
+    top: 275px;
+    right: calc(50% + 320px);
+}
+
+h4{
+    color: white;
+    /* not totally sure why but these were bold by default so I fixed it */
+    font-weight: 500;     
+    text-align: right;
+    padding: 10px 0 9px;
+}
+
+/* CSS for radio buttons */
+#radio-buttons {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* For the Main Menu page */
+.navList {
+    text-align: center;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.navTitle {
+    font-weight: 500;
+    font-size: 180px;
+    color: white;
+    margin: 20px 0px;
+}
+
+.navLink {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    background-color: coral;
+    border: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+}
+
+#menu-button {
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    background-color: coral;
+    margin: 1.5% 41.5%;
+    width: 15%;
+    padding: 25px;
+    border: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#menu-button:hover {
+    background-color: white;
+    border-color: coral;
+    border-style: solid;
+}
+
+.navLink a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+/* For the Puzzle Select page */
+.puzzleList {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.menulink {
+    text-align: left;
+}
+
+.puzzletitle {
+    font-weight: 500;
+    font-size: 100px;
+    color: white;
+    margin: 30px 0px;
+}
+
+.puzzlelink {
+    display: inline-flex;
+}
+
+.puzzle-description{
+    color: white;
+}
+
+#puzzle-button {
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: coral;
+    margin: 0px 20px 20px;
+    width: fit-content;
+    padding: 12px 20px;
+    border: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#puzzle-button:hover {
+    background-color: white;
+    border-color: coral;
+    border-style: solid;
+}
+
+#return-main-button {
+    position: relative;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    background-color: coral;
+    margin: 10px;
+    width: fit-content;
+    padding: 10px 12px;
+    border: 3px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+#return-main-button:hover {
+    background-color: white;
+    border-color: coral;
+    border-style: solid;
+}
+
+/* Help page spacing modifier */
+#help {
+    padding: 2px;
+}
+
+/* For the Help and About pages */
+.aboutMenu {
+    margin: 0px;
+    align-items: center;
+}
+.aboutList {
+    list-style: none;
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.aboutitem {
+    max-width: 100%;
+}
+
+.abouttitle {
+    font-weight: 500;
+    font-size: 100px;
+    color: white;
+    margin: 30px 0px 0px 0px;
+}
+
+#about-subtitle {
+    color: coral;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 5px;
+    margin: 0px;
+}
+
+.abouttext {
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    align-self: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 8px;
+    margin: 0px;
+}
+
+/* For the 404 page */
+.error-container {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+}
+
+/* For the radio buttons */
+#radio-buttons {
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+    height: calc(6% + 5px);;
+}
+
+input[type="radio"] {
+    appearance: checkbox;
+}
+
+#radio-div-select {
+    margin: 5px;
+    margin-bottom: 0px;
+    margin-top: 3px;
+    margin-right: 8px;
+
+}
+
+#radio-div-cross {
+    margin: 5px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-right: 8px;
+}
+
+/* For win screen */
+.hidden {
+    display: none
+}
+
+#gray-backdrop {
+    /* adapted from tweeter modal backdrop */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+#win-message {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    z-index: 15;
+    margin-top: 45vh;
+}
+
+#help-message {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    z-index: 15;
+}
